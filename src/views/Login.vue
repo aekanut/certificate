@@ -1,6 +1,10 @@
 <template>
-  <div class="center w-50">
-    <div class="container border border-3 rounded p-5" style="width:500px;">
+  <NavBar :token="true"></NavBar>
+  <div class="center">
+    <div
+      class="container border border-2 rounded p-5 border-primary"
+      style="width:500px;"
+    >
       <form>
         <h1 class="mb-5 fw-normal text-center fw-bold">Sign in</h1>
         <div class="form-floating mt-3">
@@ -28,9 +32,16 @@
     </div>
   </div>
 </template>
+
 <script>
-export default {}
+import NavBar from "../components/NavBar.vue"
+export default {
+  components: {
+    'NavBar': NavBar
+  }
+}
 </script>
+
 <style scoped>
 .center {
   margin: 0;
