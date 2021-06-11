@@ -20,7 +20,7 @@
           </tr>
         </thead>
         <tbody class="medium">
-          <tr v-for="member in members" :key="member.NO" class="body-color">
+          <tr v-for="member in members" :key="member.NO" class="body-color" @click="$router.push({ name: 'RenewAndRevoke', params: { id: member.NO } })">
             <th scope="row">
               <div class="my-1">
                 {{ member.NO }}

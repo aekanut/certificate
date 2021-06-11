@@ -122,25 +122,25 @@
           </div>
         </div>
       </div>
-      <Create v-if="Create"></Create>
-      <RevokeAndRenew v-else></RevokeAndRenew>
+      <Create v-if="Button"></Create>
+      <RenewAndRevoke v-else></RenewAndRevoke>
     </form>
   </div>
 </template>
 
 <script>
 import Create from "./Button/Create.vue"
-import RevokeAndRenew from "./Button/RevokeAndRenew.vue"
+import RenewAndRevoke from "./Button/RenewAndRevoke.vue"
 export default {
     props: {
-        Create: {
+        Button: {
             type: Boolean,
             default: true
         }
     },
   components: {
     Create,
-    RevokeAndRenew,
+    RenewAndRevoke,
   },
 }
 </script>

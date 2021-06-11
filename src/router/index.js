@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router"
 import Login from "../views/Login.vue"
 import Main from "../views/Main.vue"
 import Create from "../views/Create.vue"
+import RenewAndRevoke from "../views/RenewAndRevoke.vue"
 
 const routes = [
   {
@@ -22,6 +23,11 @@ const routes = [
     path: '/create',
     name: "Create",
     component: Create
+  },
+  {
+    path: '/renewandrevoke/:id',
+    name: "RenewAndRevoke",
+    component: RenewAndRevoke
   }
 ]
 
