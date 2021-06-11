@@ -122,15 +122,31 @@
           </div>
         </div>
       </div>
-      <div class="col-12">
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </div>
+      <Create v-if="Create"></Create>
+      <RevokeAndRenew v-else></RevokeAndRenew>
     </form>
   </div>
 </template>
 
+<script>
+import Create from "./Button/Create.vue"
+import RevokeAndRenew from "./Button/RevokeAndRenew.vue"
+export default {
+    props: {
+        Create: {
+            type: Boolean,
+            default: true
+        }
+    },
+  components: {
+    Create,
+    RevokeAndRenew,
+  },
+}
+</script>
+
 <style scoped>
-  .box-size {
-    width: 800px;
-  }
+.box-size {
+  width: 800px;
+}
 </style>
