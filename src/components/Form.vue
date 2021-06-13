@@ -129,8 +129,8 @@
 </template>
 
 <script>
-import Create from "./Button/Create.vue"
-import RenewAndRevoke from "./Button/RenewAndRevoke.vue"
+import Create from "./Buttons/Create.vue"
+import RenewAndRevoke from "./Buttons/RenewAndRevoke.vue"
 export default {
     props: {
         Button: {
